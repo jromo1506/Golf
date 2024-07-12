@@ -93,6 +93,7 @@
 @media (max-width: 800px) {
     .mobildivs{
         display: block;
+        
     }
     .pc {
         display: none;
@@ -156,6 +157,8 @@
         color: rgb(243, 243, 243);
         cursor: pointer;
     }
+
+
     
 
 
