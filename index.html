@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="gFramework.css">
+    <title>Formulario de Registro</title>
+</head>
+<body>
+    <div class="flex-c">
+        <div class="form">
+            <div class="flex-col-c p-3">
+                <div class="icon"></div>
+                <h2>Nombre Torneo Golf</h2>
+                <br>
+                <form action="backend.php" method="post" enctype="multipart/form-data">
+                    <div class="flex-col-c">
+                        <label>Nombre</label>
+                        <input type="text" name="nombre" required>
+                    </div><br>
+                    <div class="flex-col-c">
+                        <label>Celular</label>
+                        <input type="text" name="celular" required>
+                    </div><br>
+                    <div class="flex-col-c">
+                        <label>Correo</label>
+                        <input type="email" name="correo" required>
+                    </div><br>
+                    <div class="flex-col-c">
+                        <label>Handicap</label>
+                        <input type="text" name="handicap" required>
+                    </div><br>
+                    <div class="flex-col-c">
+                        <label>Nombre del equipo</label>
+                        <input type="text" name="equipo" required>
+                    </div><br>
+                    <div class="flex-col-c">
+                        <label>Campo en el que juega</label>
+                        <select name="campo" required>
+                            <option value="Campestre Aguascalientes">Campestre Aguascalientes</option>
+                            <option value="Pulgas Pandas">Pulgas Pandas</option>
+                            <option value="Santa Monica">Santa Monica</option>
+                            <option value="Otro">Otro</option>
+                        </select>
+                    </div><br>
+                    <div class="flex-col-c">
+                        <label>Subir foto</label>
+                        <input type="file" name="foto" accept="image/*" required>
+                    </div><br>
+                 
+                    <div class="flex-col-c">
+                        <button type="submit">Registrar</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+
+body{
+    background-image: url("golf.jpg");  
+    background-size: cover;
+}
+
+
+.form{
+    background-color: rgba(241, 241, 241, 0.443);
+    width: 100%;
+    margin: 200px 0px;
+    font-family: "Mulish", sans-serif;
+    text-shadow: 2px 2px 2px black;
+    font-size: 20px;
+    color: aliceblue;
+    transition: all ease 0.3s;
+    
+}
+
+.form:hover{
+    background-color: rgba(241, 241, 241, 0.582);
+}
+
+.form .flex-col-c .flex-col-c{
+    width: 100%;
+    
+}
+
+.form input, select{
+    margin-top: 5px;
+    padding: 5px;
+    width: 100%;
+    border: none;
+    background-color:rgba(241, 241, 241, 0.518);
+}
+
+.icon{
+    width: 5rem;
+    height: 5rem;
+    background-image: url("icon.png");
+    background-size: cover;
+}
+
+.flex-col-c button{
+    margin-top: 20px;
+    padding: 10px 30px;
+    background-color: rgb(213, 213, 213);
+    border: none;
+    transition: all ease 0.3s;
+}
+
+.flex-col-c button:hover{
+    background-color: rgb(255, 255, 255);
+    cursor: pointer;
+   
+}
+

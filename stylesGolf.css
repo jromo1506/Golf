@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+
+/* .tamanio{
+    width: 100vw;
+    height: 100vh;
+} */
+
+.form{
+    position: absolute;
+    top: 180%;
+    left: 40%;
+    font-family: "Josefin Sans", sans-serif;
+    color: aliceblue;
+    z-index: 99;
+    
+    transform: scale(5);
+    
+}
+
+.form input{
+    border: none;
+}
+
+.form input{
+    width: 300px;
+    background-color: transparent;
+    border: none;
+    border-bottom: 0.5px solid white;
+    color: white    ;
+}
+
+.form select{
+    width: 300px;
+    background-color: transparent;
+    border: none;
+    border-bottom: 0.5px solid white;
+    color: white;
+    -webkit-appearance: none; /* Safari y Chrome */
+  -moz-appearance: none; /* Firefox */
+  appearance: none;
+}
+.form input:focus, select:focus{
+    outline: none;
+   border: none;
+   caret-color: transparent;
+   border-bottom: 0.5px solid rgb(236, 183, 37);
+}
+
+.info{
+    margin-left: 100px;
+}
+
+.lista-info{
+    font-size: 10px;
+}
+
+.form button{
+    padding:5px;
+    background-color:  transparent;
+    background-color: rgb(189, 189, 189);
+    border: none;
+    color: rgb(0, 0, 0);
+}
+
+
+.form select option{
+    font-size: 4rem;
+    color: black;
+}
+
