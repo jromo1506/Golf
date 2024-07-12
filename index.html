@@ -126,13 +126,13 @@
         <div>
             <img src="./mobil1.jpg" class="bg1">
         </div>
-        <div style="position: relative">
+        <div style="position: relative; margin-top: -4px;">
             <img src="./mobil2.jpg" class="bg1">
             <form class="formMobil" action="backend.php" method="post" enctype="multipart/form-data">
                 <div class="flex-sa">
 
-                    <div>
-                        <h1>Inscripción</h1>
+                    <div style="width: 100%;">
+                        <h1 style="text-align: center;">Inscripción</h1>
                         <br>
                         <div class="flex-col-c">
                             <label>Nombre</label>
@@ -172,6 +172,8 @@
                             <input type="file" name="foto" accept="image/*" required>
                         </div><br>
                         <div class="flex-col-c">
+                            <h4>La Inscripción tiene un costo de $2,500.00</h4>
+                                    <br>
                             <ul class="lista-info">
                                 <li>
                                     <label>Depósito en Oxxo/ Número de tarjeta</label>
@@ -204,7 +206,6 @@
 
                             </ul>
                             <br>
-                            <button onclick="copiarTexto(event)">Copiar a portapapeles</button>
                         </div>
                         <br>
                         <div class="flex-col-c">
