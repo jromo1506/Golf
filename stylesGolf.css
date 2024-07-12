@@ -7,13 +7,13 @@
 
 .form{
     position: absolute;
-    top: 180%;
-    left: 40%;
+    top: 150%;
+    left: 20%;
     font-family: "Josefin Sans", sans-serif;
     color: aliceblue;
     z-index: 99;
     
-    transform: scale(5);
+    transform: scale(1);
     
 }
 
