@@ -94,6 +94,10 @@ body{
 }
 
 @media (max-width: 800px) {
+    body{
+        width: 100vw;
+        overflow-x: hidden;
+    }
     .mobildivs{
         display: block;
         
@@ -118,6 +122,8 @@ body{
         height: auto;
     }
     .formMobil {
+       
+        width: 100%;
         color: white;
         position: absolute;
         top: 50%;
@@ -125,7 +131,7 @@ body{
         font-family: "Josefin Sans", sans-serif;
         transform: translate(-50%, -50%);
         /* background: rgba(255, 255, 255, 0.8); */
-        padding: 20px;
+        /* padding: 20px; */
         border-radius: 10px;
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     }
@@ -145,6 +151,7 @@ body{
     }
 
     .formMobil button{
+        
         padding:5px;
         background-color:  transparent;
         background-color: rgb(82, 72, 222);
@@ -161,6 +168,35 @@ body{
         cursor: pointer;
     }
 
+
+    .formMobil input{
+        width: 300px;
+        background-color: transparent;
+        border: none;
+        border-bottom: 0.5px solid white;
+        color: white    ;
+    }
+    
+    .formMobil select{
+        width: 300px;
+        background-color: transparent;
+        border: none;
+        border-bottom: 0.5px solid white;
+        color: white;
+        -webkit-appearance: none; /* Safari y Chrome */
+      -moz-appearance: none; /* Firefox */
+      appearance: none;
+    }
+    .formMobil input:focus, select:focus{
+        outline: none;
+       border: none;
+       caret-color: transparent;
+       border-bottom: 0.5px solid rgb(236, 183, 37);
+    }
+
+    .lista-info{
+        font-size: 10px;
+    }
 
     
 
