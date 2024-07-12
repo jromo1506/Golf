@@ -3,10 +3,7 @@
 
 
 
-function copiarTexto(event) {
-    event.preventDefault()
-    // Seleccionar el texto del input
-    const texto = document.getElementById('textoACopiar').value;
+function copiarTexto(texto) {
     
     // Copiar el texto al portapapeles
     navigator.clipboard.writeText(texto)

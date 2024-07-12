@@ -1,31 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="stylesGolf.css">
     <link rel="stylesheet" href="gFramework.css">
+    <script src="https://kit.fontawesome.com/6633f982f1.js" crossorigin="anonymous"></script>
     <title>Document</title>
 </head>
+
 <body>
     <div class="pc">
-        <div >
-            <img src="./poster1.jpg" class="bg1"> 
+        <div>
+            <img src="./poster1.jpg" class="bg1">
         </div>
-        <div >
-            <img src="./poster2.jpg" class="bg1"> 
-            <div class="form">  
+        <div style="position: relative; margin-top: -4px;">
+            <img src="./poster2.jpg" class="bg1">
+            <div class="form formpc">
                 <div class="flex-col-c p-3">
                     <div class="icon"></div>
                     <h1>Inscripción</h1>
                     <br>
                     <form action="backend.php" method="post" enctype="multipart/form-data">
                         <div class="flex-sa">
-    
-                            <div>
+
+                            <div class="formumu">
                                 <div class="flex-col-c">
                                     <label>Nombre</label>
-                                    <input type="text" name="nombre"  required>
+                                    <input type="text" name="nombre" required>
                                 </div><br>
                                 <div class="flex-col-c">
                                     <label>Celular</label>
@@ -43,36 +46,39 @@
                                     <label>Nombre del equipo</label>
                                     <input type="text" name="equipo" required>
                                 </div><br>
-                            </div>
-    
-                            <div class="info">
                                 <div class="flex-col-c">
                                     <label>Campo en el que juega</label>
-                                    <select name="campo" >
+                                    <select name="campo">
                                         <option value="Campestre Aguascalientes">Campestre Aguascalientes</option>
                                         <option value="Pulgas Pandas">Pulgas Pandas</option>
                                         <option value="Santa Monica">Santa Monica</option>
                                         <option value="Otro">Otro</option>
                                     </select>
                                 </div><br>
-                               
+                            </div>
+
+                            <div class="info">
+
+
+                                
                                 <div class="flex-col-c">
-                                    <label>Subir foto</label>
-                                    <input type="file" name="foto" accept="image/*" required>
-                                </div><br>
-                                <div class="flex-col-c">
+                                    <h4>La Inscripción tiene un costo de $2,500.00</h4>
+                                    <br>
                                     <ul class="lista-info">
                                         <li>
                                             <label>Depósito en Oxxo/ Número de tarjeta</label>
-                                            <p>4555 0930 0044 3578</p>
+                                            <p>4555 0930 0044 3578 <i class="fa-solid fa-copy"
+                                                    onclick="copiarTexto('4555 0930 0044 3578')"></i></p>
                                         </li>
                                         <li>
                                             <label>Cuenta:</label>
-                                            <p> 299 685 3234</p>
+                                            <p> 299 685 3234 <i class="fa-solid fa-copy"
+                                                    onclick="copiarTexto('299 685 3234')"></i></p>
                                         </li>
                                         <li>
                                             <label>CLABE:</label>
-                                            <p>0120 1002 9968 532349</p>
+                                            <p>0120 1002 9968 532349 <i class="fa-solid fa-copy"
+                                                    onclick="copiarTexto('0120 1002 9968 532349')"></i></p>
                                         </li>
                                         <li>
                                             <label>Banco: </label>
@@ -83,156 +89,168 @@
                                             <p> Miguel Ángel Castellanos Barragán</p>
                                         </li>
                                         <br>
-                                        
+
                                         <p>Si requieres factura agrega el IVA <br>
                                             Deberás depositar $2,900.00<br>
                                             Manda tu CIF a facturas@holeinwine.mx</p>
-                                        
+
                                     </ul>
-                                    <br> 
-                                    <button onclick="copiarTexto(event)">Copiar a portapapeles</button>
+                                    <br>
+
                                 </div>
                                 <br>
+                                <div class="flex-col-c">
+                                    <label>Subir foto</label>
+                                    <input type="file" name="foto" accept="image/*" required>
+                                </div><br>
                                 <div class="flex-col-c">
                                     <button type="submit">Registrar</button>
                                 </div>
                             </div>
-    
-    
+
+
                         </div>
-                        
-                        
-                       
-                     
-                        
+
+
+
+
+
                     </form>
                 </div>
             </div>
         </div>
     </div>
-    
 
     <div class="mobildivs">
-        <img src="./mobil1.jpg" class="bg1"> 
-    </div>
-    <div class="mobildivs">
-        <img src="./mobil2.jpg" class="bg1"> 
-        <form class="formMobil" action="backend.php" method="post" enctype="multipart/form-data">
-            <div class="flex-sa">
-           
-                <div>
-                    <h1>Inscripción</h1>
-                    <br>
-                    <div class="flex-col-c">
-                        <label>Nombre</label>
-                        <input type="text" name="nombre"  required>
-                    </div><br>
-                    <div class="flex-col-c">
-                        <label>Celular</label>
-                        <input type="text" name="celular" required>
-                    </div><br>
-                    <div class="flex-col-c">
-                        <label>Correo</label>
-                        <input type="email" name="correo" required>
-                    </div><br>
-                    <div class="flex-col-c">
-                        <label>Handicap</label>
-                        <input type="text" name="handicap" required>
-                    </div><br>
-                    <div class="flex-col-c">
-                        <label>Nombre del equipo</label>
-                        <input type="text" name="equipo" required>
-                    </div><br>
-                </div>
 
-                <div class="info">
-                    <div class="flex-col-c">
-                        <label>Campo en el que juega</label>
-                        <select name="campo" >
-                            <option value="Campestre Aguascalientes">Campestre Aguascalientes</option>
-                            <option value="Pulgas Pandas">Pulgas Pandas</option>
-                            <option value="Santa Monica">Santa Monica</option>
-                            <option value="Otro">Otro</option>
-                        </select>
-                    </div><br>
-                   
-                    <div class="flex-col-c">
-                        <label>Subir foto</label>
-                        <input type="file" name="foto" accept="image/*" required>
-                    </div><br>
-                    <div class="flex-col-c">
-                        <ul class="lista-info">
-                            <li>
-                                <label>Depósito en Oxxo/ Número de tarjeta</label>
-                                <p>4555 0930 0044 3578</p>
-                            </li>
-                            <li>
-                                <label>Cuenta:</label>
-                                <p> 299 685 3234</p>
-                            </li>
-                            <li>
-                                <label>CLABE:</label>
-                                <p>0120 1002 9968 532349</p>
-                            </li>
-                            <li>
-                                <label>Banco: </label>
-                                <p>BBVA Bancomer</p>
-                            </li>
-                            <li>
-                                <label>Beneficiario:</label>
-                                <p> Miguel Ángel Castellanos Barragán</p>
-                            </li>
+        <div>
+            <img src="./mobil1.jpg" class="bg1">
+        </div>
+        <div style="position: relative">
+            <img src="./mobil2.jpg" class="bg1">
+            <form class="formMobil" action="backend.php" method="post" enctype="multipart/form-data">
+                <div class="flex-sa">
+
+                    <div>
+                        <h1>Inscripción</h1>
+                        <br>
+                        <div class="flex-col-c">
+                            <label>Nombre</label>
+                            <input type="text" name="nombre" required>
+                        </div><br>
+                        <div class="flex-col-c">
+                            <label>Celular</label>
+                            <input type="text" name="celular" required>
+                        </div><br>
+                        <div class="flex-col-c">
+                            <label>Correo</label>
+                            <input type="email" name="correo" required>
+                        </div><br>
+                        <div class="flex-col-c">
+                            <label>Handicap</label>
+                            <input type="text" name="handicap" required>
+                        </div><br>
+                        <div class="flex-col-c">
+                            <label>Nombre del equipo</label>
+                            <input type="text" name="equipo" required>
+                        </div><br>
+                    </div>
+
+                    <div class="info">
+                        <div class="flex-col-c">
+                            <label>Campo en el que juega</label>
+                            <select name="campo">
+                                <option value="Campestre Aguascalientes">Campestre Aguascalientes</option>
+                                <option value="Pulgas Pandas">Pulgas Pandas</option>
+                                <option value="Santa Monica">Santa Monica</option>
+                                <option value="Otro">Otro</option>
+                            </select>
+                        </div><br>
+
+                        <div class="flex-col-c">
+                            <label>Subir foto</label>
+                            <input type="file" name="foto" accept="image/*" required>
+                        </div><br>
+                        <div class="flex-col-c">
+                            <ul class="lista-info">
+                                <li>
+                                    <label>Depósito en Oxxo/ Número de tarjeta</label>
+                                    <p>4555 0930 0044 3578 <i class="fa-solid fa-copy"
+                                            onclick="copiarTexto('4555 0930 0044 3578')"></i></p>
+                                </li>
+                                <li>
+                                    <label>Cuenta:</label>
+                                    <p> 299 685 3234 <i class="fa-solid fa-copy"
+                                            onclick="copiarTexto('299 685 3234')"></i></p>
+                                </li>
+                                <li>
+                                    <label>CLABE:</label>
+                                    <p>0120 1002 9968 532349 <i class="fa-solid fa-copy"
+                                            onclick="copiarTexto('0120 1002 9968 532349')"></i></p>
+                                </li>
+                                <li>
+                                    <label>Banco: </label>
+                                    <p>BBVA Bancomer</p>
+                                </li>
+                                <li>
+                                    <label>Beneficiario:</label>
+                                    <p> Miguel Ángel Castellanos Barragán</p>
+                                </li>
+                                <br>
+
+                                <p>Si requieres factura agrega el IVA <br>
+                                    Deberás depositar $2,900.00<br>
+                                    Manda tu CIF a facturas@holeinwine.mx</p>
+
+                            </ul>
                             <br>
-                            
-                            <p>Si requieres factura agrega el IVA <br>
-                                Deberás depositar $2,900.00<br>
-                                Manda tu CIF a facturas@holeinwine.mx</p>
-                            
-                        </ul>
-                        <br> 
-                        <button onclick="copiarTexto(event)">Copiar a portapapeles</button>
+                            <button onclick="copiarTexto(event)">Copiar a portapapeles</button>
+                        </div>
+                        <br>
+                        <div class="flex-col-c">
+                            <button type="submit">Registrar</button>
+                        </div>
                     </div>
-                    <br>
-                    <div class="flex-col-c">
-                        <button type="submit">Registrar</button>
-                    </div>
+
+
                 </div>
 
 
-            </div>
-            
-            
-           
-         
-            
-        </form>
+
+
+
+            </form>
+        </div>
+
     </div>
-    
-    
+
+
 </body>
+
 </html>
-<script stc="script.js"></script>
+<script src="script.js"></script>
 
 <style>
-    *{
-       padding: 0px;
-       margin: 0px;
-      
+    * {
+        padding: 0px;
+        margin: 0px;
+
     }
-    .bg1{
+
+    .bg1 {
         height: 100%;
         width: 100%;
         /* background-image: url("./poster1.jpg"); */
-        background-size:cover;
+        background-size: cover;
         background-repeat: no-repeat;
     }
 
-    .bg2{
+    .bg2 {
         margin-top: -10px;
         height: 100%;
         width: 100%;
         /* background-image: url("./poster2.jpg"); */
-        background-size:cover;
+        background-size: cover;
         background-repeat: no-repeat;
     }
 </style>

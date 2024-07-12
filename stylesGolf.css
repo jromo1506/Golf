@@ -7,8 +7,8 @@
 
 .form{
     position: absolute;
-    top: 150%;
-    left: 20%;
+    top: 10%;
+    left: 15%;
     font-family: "Josefin Sans", sans-serif;
     color: aliceblue;
     z-index: 99;
@@ -47,11 +47,20 @@
 }
 
 .info{
-    margin-left: 100px;
+    width: 50%;
+}
+
+.formumu{
+    width: 50%;
+    margin-right: 20px;
+}
+.formpc{
+    width: 70%;
+
 }
 
 .lista-info{
-    font-size: 10px;
+    font-size: 13px;
 }
 
 .form button{
@@ -91,7 +100,7 @@
 
     .formMobil{
         position: absolute;
-        top: 50%;
+        top: 10%;
         left: 50%;
     }
 
@@ -107,7 +116,7 @@
     .formMobil {
         color: white;
         position: absolute;
-        top: 320%;
+        top: 10%;
         left: 50%;
         font-family: "Josefin Sans", sans-serif;
         transform: translate(-50%, -50%);
