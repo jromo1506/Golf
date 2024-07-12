@@ -84,6 +84,7 @@
 @media (max-width: 800px) {
     .mobildivs{
         display: block;
+        
     }
     .pc {
         display: none;
@@ -148,7 +149,7 @@
         cursor: pointer;
     }
 
-    
+
     
 
 

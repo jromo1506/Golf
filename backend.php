@@ -4,8 +4,49 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        *{
+            margin:0;
+            padding:0;
+        }
+
+        .garciasMobil{
+           
+            display:none;
+        }
+        
+        .garciasPc{
+                
+            position: relative;
+            width: 100%;
+            height:100%;
+            /* background-image: url("./poster2.jpg"); */
+            background-size:cover;
+            background-repeat: no-repeat;
+        
+        }
+
+        @media (max-width: 800px) {
+            .garciasPc{
+                display: none  !important;
+            }
+
+            .garciasMobil{
+                display:block;
+                position: relative;
+                width: 100%;
+                height:100%;
+                /* background-image: url("./poster2.jpg"); */
+                background-size:cover;
+                background-repeat: no-repeat;
+            }
+        }
+
+
+    </style>
 </head>
 <body>
+
     
 
 
@@ -20,6 +61,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $handicap = htmlspecialchars($_POST['handicap']);
     $equipo = htmlspecialchars($_POST['equipo']);
     $campo = htmlspecialchars($_POST['campo']);
+
+
 
 
     $foto_ticket = $_FILES['foto'];
@@ -66,9 +109,12 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $asunto = "Nuevo formulario enviado con adjunto";
 
         if (mail($para, $asunto, $mensaje, $headers)) {
-            echo "<p>El correo ha sido enviado correctamente.</p>";
+            
+            echo "<img src='./gracias1.jpg' class='garciasMobil'>";
+            echo "<img src='./graciaspc.jpg' class='garciasPc'>";
         } else {
-            echo "<p>Error al enviar el correo.</p>";
+            echo "<img src='./gracias1.jpg' class='garciasMobil'>";
+            echo "<img src='./graciaspc.jpg' class='garciasPc'>";
         }
     }
 } else {
