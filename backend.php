@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Hole in Wine</title>
     <style>
         *{
             margin:0;
@@ -80,7 +80,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
         // Preparar encabezados para el correo
         $boundary = md5(time()); // delimitador único
-        $headers = "From: admin@lightbox.com\r\n";
+        $headers = "From: admin@holeinwine.mx\r\n";
         $headers .= "Reply-To: $correo\r\n";
         $headers .= "MIME-Version: 1.0\r\n";
         $headers .= "Content-Type: multipart/mixed; boundary=\"$boundary\"\r\n";
@@ -105,7 +105,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $mensaje .= "--$boundary--";
 
         // Enviar correo
-        $para = "admin@lightbox.com"; // Añadir más direcciones según sea necesario
+        $para = "admin@holeinwine.mx"; // Añadir más direcciones según sea necesario
         $asunto = "Nuevo formulario enviado con adjunto";
 
         if (mail($para, $asunto, $mensaje, $headers)) {
