@@ -113,7 +113,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             echo "<img src='./gracias1.jpg' class='garciasMobil'>";
             echo "<img src='./graciaspc.jpg' class='garciasPc'>";
         } else {
-            echo "<h1>HA HABIDO UN ERROR AL ENVIAR TU CORREO</h1>"
+            echo "<h1>HA HABIDO UN ERROR AL ENVIAR TU CORREO</h1>";
             echo "<img src='./gracias1.jpg' class='garciasMobil'>";
             echo "<img src='./graciaspc.jpg' class='garciasPc'>";
         }

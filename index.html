@@ -20,7 +20,8 @@
             <div class="form formpc">
                 <div class="flex-col-c p-3">
                     <div class="icon"></div>
-                    <h1>Inscripción</h1>
+                    <h1>Registro</h1>
+                    
                     <br>
                     <form action="backend.php" method="post" enctype="multipart/form-data">
                         <div class="flex-sa">
@@ -30,31 +31,27 @@
                                     <label>Nombre</label>
                                     <input type="text" name="nombre" required>
                                 </div><br>
+                                <br>
                                 <div class="flex-col-c">
                                     <label>Celular</label>
                                     <input type="text" name="celular" required>
-                                </div><br>
+                                </div><br><br>
                                 <div class="flex-col-c">
                                     <label>Correo</label>
                                     <input type="email" name="correo" required>
-                                </div><br>
+                                </div><br><br>
                                 <div class="flex-col-c">
                                     <label>Handicap</label>
                                     <input type="text" name="handicap" required>
-                                </div><br>
+                                </div><br><br>
                                 <div class="flex-col-c">
                                     <label>Nombre del equipo</label>
                                     <input type="text" name="equipo" required>
-                                </div><br>
+                                </div><br><br>
                                 <div class="flex-col-c">
-                                    <label>Campo en el que juega</label>
-                                    <select name="campo">
-                                        <option value="Campestre Aguascalientes">Campestre Aguascalientes</option>
-                                        <option value="Pulgas Pandas">Pulgas Pandas</option>
-                                        <option value="Santa Monica">Santa Monica</option>
-                                        <option value="Otro">Otro</option>
-                                    </select>
-                                </div><br>
+                                    <label>Campo en el que juegas</label>
+                                    <input type="text" name="campo" required>
+                                </div>
                             </div>
 
                             <div class="info">
@@ -67,8 +64,7 @@
                                     <ul class="lista-info">
                                         <li>
                                             <label>Depósito en Oxxo/ Número de tarjeta</label>
-                                            <p>4555 0930 0044 3578 <i class="fa-solid fa-copy"
-                                                    onclick="copiarTexto('4555 0930 0044 3578')"></i></p>
+                                            <p>4555 0930 0044 3578 <i class="fa-solid fa-copy"  onclick="copiarTexto('4555 0930 0044 3578')"></i></p>
                                         </li>
                                         <li>
                                             <label>Cuenta:</label>
@@ -100,7 +96,7 @@
                                 </div>
                                 <br>
                                 <div class="flex-col-c">
-                                    <label>Subir foto</label>
+                                    <label>Subir foto del comprobante de pago</label>
                                     <input type="file" name="foto" accept="image/*" required>
                                 </div><br>
                                 <div class="flex-col-c">
@@ -117,7 +113,10 @@
 
                     </form>
                 </div>
+                <h1 class="lugaresrest" style="text-align: center;">Lugares disponibles: 72</h1>
+            <h1 class="horaactual">3:17 PM 15 DE JULIO DE 2024</h1>
             </div>
+            
         </div>
     </div>
 
@@ -132,7 +131,7 @@
                 <div class="flex-sa">
 
                     <div style="width: 100%;">
-                        <h1 style="text-align: center;">Inscripción</h1>
+                        <h1 style="text-align: center;">Registro</h1>
                         <br>
                         <div class="flex-col-c">
                             <label>Nombre</label>
@@ -158,19 +157,11 @@
 
                     <div class="info">
                         <div class="flex-col-c">
-                            <label>Campo en el que juega</label>
-                            <select name="campo">
-                                <option value="Campestre Aguascalientes">Campestre Aguascalientes</option>
-                                <option value="Pulgas Pandas">Pulgas Pandas</option>
-                                <option value="Santa Monica">Santa Monica</option>
-                                <option value="Otro">Otro</option>
-                            </select>
+                            <label>Campo en el que juegas</label>
+                                    <input type="text" name="campo" required>
                         </div><br>
 
-                        <div class="flex-col-c">
-                            <label>Subir foto</label>
-                            <input type="file" name="foto" accept="image/*" required>
-                        </div><br>
+                        
                         <div class="flex-col-c">
                             <h4>La Inscripción tiene un costo de $2,500.00</h4>
                                     <br>
@@ -209,6 +200,10 @@
                         </div>
                         <br>
                         <div class="flex-col-c">
+                            <label>Subir foto del comprobante de pago</label>
+                            <input type="file" name="foto" accept="image/*" required>
+                        </div><br>
+                        <div class="flex-col-c">
                             <button type="submit">Registrar</button>
                         </div>
                     </div>
@@ -218,7 +213,8 @@
 
 
 
-
+                <h1 class="lugaresrest" style="text-align: center;">Lugares disponibles: 72</h1>
+                <h1 class="horaactual">3:17 PM 15 DE JULIO DE 2024</h1>
 
             </form>
         </div>
@@ -230,6 +226,36 @@
 
 </html>
 <script src="script.js"></script>
+<script>
+    // Función para obtener la fecha y hora actual en el formato deseado
+    function actualizarHoraActual() {
+        const ahora = new Date();
+
+        // Formato de la fecha y hora, incluyendo segundos
+        const options = {
+            hour: 'numeric',
+            minute: 'numeric',
+            second: 'numeric',
+            hour12: true,
+            day: 'numeric',
+            month: 'long',
+            year: 'numeric'
+        };
+
+        // Formatear la fecha y hora según las opciones definidas
+        const formatoFechaHora = new Intl.DateTimeFormat('es-ES', options).format(ahora);
+
+        // Actualizar el contenido del elemento con clase 'horaactual'
+        const elementosHoraActual = document.querySelectorAll('.horaactual');
+            elementosHoraActual.forEach(elemento => {
+                elemento.textContent = formatoFechaHora;
+            });
+    }
+
+    // Llamar a la función para que se ejecute inicialmente y cada segundo
+    actualizarHoraActual();
+    setInterval(actualizarHoraActual, 1000); // Actualizar cada segundo
+</script>
 
 <style>
     * {

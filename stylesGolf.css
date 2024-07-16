@@ -28,7 +28,7 @@ body{
     width: 300px;
     background-color: transparent;
     border: none;
-    border-bottom: 0.5px solid white;
+    border-bottom: 0.5px solid white !important;
     color: white    ;
 }
 
@@ -36,7 +36,7 @@ body{
     width: 300px;
     background-color: transparent;
     border: none;
-    border-bottom: 0.5px solid white;
+    border-bottom: 0.5px solid white !important;
     color: white;
     -webkit-appearance: none; /* Safari y Chrome */
   -moz-appearance: none; /* Firefox */
@@ -46,7 +46,7 @@ body{
     outline: none;
    border: none;
    caret-color: transparent;
-   border-bottom: 0.5px solid rgb(236, 183, 37);
+   border-bottom: 0.5px solid rgb(236, 183, 37) !important;
 }
 
 .info{
@@ -93,11 +93,55 @@ body{
     display: none;
 }
 
+
+
+.horaactual{
+    font-family: "Josefin Sans", sans-serif;
+    text-align: center;
+    width: 100%;
+    color: white;
+    margin-bottom: 100px;
+    font-size: 1.5rem;
+}
+
+.lugaresrest{
+    font-family: "Josefin Sans", sans-serif;
+    text-align: center;
+    width: 100%;
+    color: white;
+    font-size: 1.5rem;
+}
+
+
+
+
+
 @media (max-width: 800px) {
     body{
         width: 100vw;
         overflow-x: hidden;
     }
+
+    .horaactual{
+        font-family: "Josefin Sans", sans-serif;
+        text-align: center;
+        width: 100%;
+        color: white;
+        margin-bottom: 100px;
+    }
+    
+    .lugaresrest{
+        margin-top: 50px;
+    }
+
+    .horaactual{
+        font-size: 1rem;
+    }
+    
+    .lugaresrest{
+        font-size: 1rem;
+    }
+
     .mobildivs{
         display: block;
         
@@ -108,7 +152,7 @@ body{
 
     .formMobil{
         position: absolute;
-        top: 50%;
+        top: 65%;
         left: 50%;
     }
 
@@ -126,7 +170,7 @@ body{
         width: 100%;
         color: white;
         position: absolute;
-        top: 50%;
+        top: 65%;
         left: 50%;
         font-family: "Josefin Sans", sans-serif;
         transform: translate(-50%, -50%) scale(0.8);
@@ -173,7 +217,7 @@ body{
         width: 300px;
         background-color: transparent;
         border: none;
-        border-bottom: 0.5px solid white;
+        border-bottom: 0.5px solid white !important;
         color: white    ;
     }
     
@@ -181,7 +225,7 @@ body{
         width: 300px;
         background-color: transparent;
         border: none;
-        border-bottom: 0.5px solid white;
+        border-bottom: 0.5px solid white !important;
         color: white;
         -webkit-appearance: none; /* Safari y Chrome */
       -moz-appearance: none; /* Firefox */
@@ -191,7 +235,7 @@ body{
         outline: none;
        border: none;
        caret-color: transparent;
-       border-bottom: 0.5px solid rgb(236, 183, 37);
+       border-bottom: 0.5px solid rgb(236, 183, 37) !important;
     }
 
     .lista-info{
@@ -202,10 +246,5 @@ body{
 
 
 }
-
-
-
-
-
 
 
